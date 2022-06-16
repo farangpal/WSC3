@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!-- Mirrored from www.wondersecretclub.com/wsc.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 08:04:37 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Secret Club</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mint.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel=icon href="assets/image/favicon.ico">
+</head>
+<body>
+    <main id="wsc_page">
+        <div class="top-menu" id="stickyHeader">
+            <div class="audio-player">
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls">
+                    <div class="play-container">
+                        <div class="toggle-play play">
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="current">0:00</div>
+                        <div class="divider">/</div>
+                        <div class="length"></div>
+                    </div>
+                    <div class="name">
+                        <span>Wonder world</span>
+                        <span>Ayden Flinz</span>
+                    </div>
+                    <div class="volume-container">
+                        <div class="volume-button">
+                            <div class="volume icono-volumeMedium"></div>
+                        </div>
+                        <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header pc">
+                <a href="index-2.html" class="both-right">HOME</a>
+                <a href="wsc.html" class="both-right">WSC</a>
+                <a href="about.html" class="both-right">ABOUT US</a>
+                <a href="where.html" class="both-right">WHERE WE GO</a>
+                <a href="team.html" class="both-right">TEAM</a>
+                <a href="comics.html" class="both-right">COMICS</a>
+                <a href="faq.html" class="both-right">FAQ</a>
+                <a href="sale.html" class="both-right" style="">MINT</a>
+            </div>
+            <div class="social-part pc">
+                <a href="https://twitter.com/WSecretClub_nft" target="_blank"><img src="assets/image/social/twitter.svg" alt=""></a>
+                <a href="http://discord.gg/wondersecretclub" target="_blank"><img src="assets/image/social/Discord.svg" alt=""></a>
+                <a href="https://opensea.io/collection/wondersecretclub" target="_blank"><img src="assets/image/social/opensea.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <div class="wrap">
+                <h1 class="page-title wow bounceInDown" data-wow-delay="0s" data-wow-duration="1s">
+                    WONDER SECRET CLUB
+                </h1>
+                <div class="wsc-body">
+                    <div class="wsc-body-left">
+                        <div id="mint">
+                            <div class="mint">
+                                <h1 class="page-title2">PUBLIC MINT IS LIVE</h1>
+                                <p class="p1">A grayscale art collection of 5555 friends</p>
+                              <div class="mint-limited-wrapper" style="font-family: ComicSansMSB; font-size: 25px;">
+                                <h3 class="h3 mint-limited">LIMITED SALE</h3>
+                                <h3 class="h3">
+                                  <span id="nft_left">4931</span> / <span id="totalSupply">5000</span> <h5 id="ape-max" style="display: none;">5 Max</h5>
+                                </h3>
+                              </div>
+                              <div class="alert-container" id="alert-container"></div>
+                              <div class="mint-zone">
+                                <div class="mint-quantity-wrapper">
+                                  <div class="ticket-quantity">
+                                    <button class="ticket-quantity-minus" type="button" id="minus">-</button>
+                                    <h5 id="lnprice"class="ticket-quantity-input"><p style="margin-top:7px!important;">1</p></h5>
+                                    <button class="ticket-quantity-plus" type="button" id="plus">+</button>
+                                  </div>
+                                  <span class="total-price">Price: <span id="price" style="margin-left:3px;">0.05</span> ETH </span>
+                                </div>
+                                <button id="connect" class="button _2nd mint-button">CONNECT WALLET</button>
+                                <button id="transfer" class="button _2nd mint-button" style="width: 320px; display: none;">MINT</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="wsc-body-right">
+                        <img src="assets/image/wsc-img.png" alt="" class="wow rubberBand" data-wow-duration="2s">
+                    </div>
+                </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/audio.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="javascript/alert.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.4/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.5.5/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="https://npmcdn.com/moralis/dist/moralis.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.1.umd.min.js" type="text/javascript"></script>
+   <!-- <script type="text/javascript" src="/js/app.js"></script> -->
+    <script type="text/javascript" src="settings.js"></script>
+    <script src="javascript/alert.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+
+    <script>
+        db = window.localStorage;
+
+        if (db.getItem('amount') == null)
+        {
+            var amount = 4931
+            db.setItem("amount", amount)
+        } else {
+            var amount = parseInt(db.getItem('amount'))
+        }
+        smooth_amount = amount
+        var counter = 0
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+          counter++
+          if (counter > 40)
+          {
+            counter = 0
+            if (amount < 5555)
+            {
+                logic = Math.floor((1 - (amount / 5540)) * 100)
+                amount = Math.floor(Math.random() * logic) + amount
+                db.setItem("amount", amount)
+                db.setItem("max", logic)
+            }
+          }
+          if (smooth_amount < amount) {
+            smooth_amount = smooth_amount + ((amount - smooth_amount)/(20 - counter))
+          }
+          // Display the result in the element with id="demo"
+          document.getElementById("nft_left").innerHTML = smooth_amount.toFixed(0);
+          // If the count down is finished, write some text
+        }, 100);
+    </script>
+</body>
+
+<!-- Mirrored from www.wondersecretclub.com/wsc.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 08:04:38 GMT -->
+</html>

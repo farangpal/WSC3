@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!-- Mirrored from www.wondersecretclub.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 08:03:26 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Secret Club</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel=icon href="assets/image/favicon.ico">
+    
+</head>
+<body>
+    <main id="top_page">
+        <div class="top-menu" id="stickyHeader">
+            <div class="audio-player">
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls">
+                    <div class="play-container">
+                        <div class="toggle-play play">
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="current">0:00</div>
+                        <div class="divider">/</div>
+                        <div class="length"></div>
+                    </div>
+                    <div class="name">
+                        <span>Wonder world</span>
+                        <span>Ayden Flinz</span>
+                    </div>
+                    <div class="volume-container">
+                        <div class="volume-button">
+                            <div class="volume icono-volumeMedium"></div>
+                        </div>
+                        <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header pc">
+                <a href="index-2.html" class="both-right">HOME</a>
+                <a href="wsc.html" class="both-right">WSC</a>
+                <a href="about.html" class="both-right">ABOUT US</a>
+                <a href="where.html" class="both-right">WHERE WE GO</a>
+                <a href="team.html" class="both-right">TEAM</a>
+                <a href="comics.html" class="both-right">COMICS</a>
+                <a href="faq.html" class="both-right">FAQ</a>
+                <a href="sale.html" class="both-right" style="">MINT</a>
+            </div>
+            <div class="social-part pc">
+                <a href="https://twitter.com/WSecretClub_nft" target="_blank"><img src="assets/image/social/twitter.svg" alt=""></a>
+                <a href="http://discord.gg/wondersecretclub" target="_blank"><img src="assets/image/social/Discord.svg" alt=""></a>
+                <a href="https://opensea.io/collection/wondersecretclub" target="_blank"><img src="assets/image/social/opensea.svg" alt=""></a>
+            </div>
+            <div class="dropdown-btn sp" id="DropdownBtn">
+                <div class="menu_btn" onclick="event.stopPropagation(); myFunction(this)" id="menuBtn">
+                    <div class="bar1" id="bar1"></div>
+                    <div class="bar2" id="bar2"></div>
+                    <div class="bar3" id="bar3"></div>
+                </div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="dropdown-body">
+                    <a href="index-2.html" class="dropdown-menu-item">
+                        TOP
+                    </a>
+                    <a href="#smart_wsc" class="dropdown-menu-item">
+                        WONDER SECRET CLUB
+                    </a>
+                    <a href="#smart_about" class="dropdown-menu-item">
+                        ABOUT US
+                    </a>
+                    <a href="comics.html" class="dropdown-menu-item">
+                        COMICS
+                    </a>
+                    <a href="#smart_where" class="dropdown-menu-item">
+                        WHERE WE GO
+                    </a>
+                    <a href="#smart_team" class="dropdown-menu-item">
+                        TEAM
+                    </a>
+                    <a href="#smart_faq" class="dropdown-menu-item">
+                        FAQ
+                    </a>
+                    <a href="#" class="dropdown-menu-item" style="pointer-events: none; opacity: 0.6;">
+                        MINT
+                    </a>
+                    <a href="https://twitter.com/WSecretClub_nft" class="dropdown-menu-item" target="_blank">
+                        TWITTER
+                    </a>
+                    <a href="http://discord.gg/wondersecretclub" class="dropdown-menu-item" target="_blank">
+                        DISCORD
+                    </a>
+                    <a href="#" class="dropdown-menu-item">
+                        OPENSEA
+                    </a>
+                </div>
+            </div>
+
+            <!--
+            <a href="./mintprocess.html" class="wallet-address sp">CONNECT WALLET</a>
+            -->
+            <div id="modal1" class="modal">
+                <div class="modal__content">
+                    <h1>ACCESS TO WONDER SECRET CLUB</h1>
+                    <p>
+                        <span>ACCESS TO WONDER SECRET CLUB</span>
+                        We support new nft projects and give back GA spots to the community. WSC holders are eligible to participate in exclusive GiveAway drawings.
+                    </p>
+                    <p>
+                        <span>Wonder Secret Club DAO</span>
+                        A fair service exclusively for WSC holders, 30% of our mint revenue, 30% of 7.0% secondary royalty we set will be sent to the community wallet. An impartial service means that all holders decide on the service. Therefore, we will allow all WSC NFT holders to vote to determine the direction of the Wonder Secret Club. The Community Wallet is at the discretion of all WSC NFT holders.
+                    </p>   
+                    <p>
+                        <span>The Wonder Secret Club Moderation Team</span>
+                        Moderators are responsible for protecting and growing the most valuable parts of our community. We welcome paid full- and part-time moderators, who will be community management professionals in the NFT space. the WSC moderation team is a community-first initiative.
+                    </p>               
+                    <a href="#smart_where" class="modal__close">&times;</a>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal__content">
+                    <h1>WEB2 SERVICE</h1>
+                    <p>
+                        <span>Wonder Secret Club Comics</span>
+                        From the very beginning of the project, artist Roro's idea was to publish a comic book. As the story of the comics progresses, the WSC comics will appear in the real world.
+                    </p>
+                    <p>
+                        <span>Wonder Secret Club Apparel</span>
+                        Low, our project manager, loves fashion, and he had the idea of creating an apparel line for the WSC. The clothes worn by the WSC characters could appear in our real world.
+                    </p>   
+                    <p>
+                        <span>IRL Events</span>
+                        The WSC community is made up of users from many different countries, and we would like to strengthen our bonds with our fellow WSC members by interacting with them in the real world. It is also a great way to expand our circle of community. Social events and exhibitions are being considered for many people to enjoy.
+                    </p>               
+                    <a href="#smart_where" class="modal__close">&times;</a>
+                </div>
+            </div>
+            <!-- <div id="modal3" class="modal">
+                <div class="modal__content">
+                    <h1>WEB2 SERVICE</h1>
+                    <p>
+                        <span>Wonder Secret Club Comics</span>
+                        From the very beginning of the project, artist Roro's idea was to publish a comic book. As the story of the comics progresses, the WSC comics will appear in the real world.
+                    </p>
+                    <p>
+                        <span>Wonder Secret Club Apparel</span>
+                        Low, our project manager, loves fashion, and he had the idea of creating an apparel line for the WSC. The clothes worn by the WSC characters could appear in our real world.
+                    </p>   
+                    <p>
+                        <span>IRL Events</span>
+                        The WSC community is made up of users from many different countries, and we would like to strengthen our bonds with our fellow WSC members by interacting with them in the real world. It is also a great way to expand our circle of community. Social events and exhibitions are being considered for many people to enjoy.
+                    </p>               
+                    <a href="#smart_where" class="modal__close">&times;</a>
+                </div>
+            </div> -->
+            <div id="modal4" class="modal">
+                <div class="modal__content">
+                    <h1>CC0 (CREATIVE COMMONS ZERO)</h1>
+                    <p>
+                        Holders of WSC NFTs have ownership and commercial use rights to the WSC NFTs they own. More details will be available soon.
+                    </p>              
+                    <a href="#smart_where" class="modal__close">&times;</a>
+                </div>
+            </div>
+            <div id="modal5" class="modal">
+                <div class="modal__content">
+                    <h1>AIR DROP</h1>
+                    <p>
+                        Something is falling from the sky in the WSC world. What will be airdropped? We'll let you know soon.
+                    </p>         
+                    <a href="#smart_where" class="modal__close">&times;</a>
+                </div>
+            </div>
+            <div id="modal6" class="modal">
+                <div class="modal__content">
+                    <h1>METAVERSE</h1>
+                    <p>
+                        Please wait for details!
+                    </p>              
+                    <a href="#" class="modal__close">&times;</a>
+                </div>
+            </div>
+            <!-- <div id="modal7" class="modal">
+                <div class="modal__content">
+                    <h1>WEB2 SERVICE</h1>
+                    <p>
+                        <span>Wonder Secret Club Comics</span>
+                        From the very beginning of the project, artist Roro's idea was to publish a comic book. As the story of the comics progresses, the WSC comics will appear in the real world.
+                    </p>
+                    <p>
+                        <span>Wonder Secret Club Apparel</span>
+                        Low, our project manager, loves fashion, and he had the idea of creating an apparel line for the WSC. The clothes worn by the WSC characters could appear in our real world.
+                    </p>   
+                    <p>
+                        <span>IRL Events</span>
+                        The WSC community is made up of users from many different countries, and we would like to strengthen our bonds with our fellow WSC members by interacting with them in the real world. It is also a great way to expand our circle of community. Social events and exhibitions are being considered for many people to enjoy.
+                    </p>               
+                    <a href="#" class="modal__close">&times;</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <img src="assets/image/top/WSC_LOGO.png" alt="" class="top-logo-img wow rotateIn" data-wow-duration="2s">
+            <img src="assets/image/top/imgpsh_fullsize_anim.png" alt="" class="top-logo-title wow zoomInDown" data-wow-delay="0.5s" data-wow-duration="1s">
+            <div class="top-title">
+                WE HAVE BEEN EXPECTING YOU
+            </div>
+            <div class="top-btn pc">
+                <img src="assets/image/top/finger02.png" alt="">
+                <p>CLICK ON CHARACTERS!!</p>
+            </div>
+            <!--
+            <a href="./walletconnect.html" class="mint-btn sp wow shake" data-wow-delay="0.5s" data-wow-duration="1s">
+                <img src="./assets/image/mint.png" alt="">
+            </a>
+            -->
+            <div class="menu-part pc">
+                <a href="#"><img src="assets/image/Character/Marcus-imb.png" alt="" class="chat-character"><img src="assets/image/chat/coming-chat.png" alt="" class="chat-img"></a>
+                <a href="team.html"><img src="assets/image/Character/Finn-imb.png" alt="" class="chat-character"><img src="assets/image/chat/team-chat.png" alt="" class="chat-img"></a>
+                <a href="comics.html"><img src="assets/image/Character/Carl-imb.png" alt="" class="chat-character"><img src="assets/image/chat/comic-chat.png" alt="" class="chat-img"></a>
+                <a href="wsc.html"><img src="assets/image/Character/William-imb.png" alt="" class="chat-character"><img src="assets/image/chat/wsc-chat.png" alt="" class="chat-img"></a>
+                <a href="about.html"><img src="assets/image/Character/Rick-imb.png" alt="" class="chat-character"><img src="assets/image/chat/about-chat.png" alt="" class="chat-img"></a>
+                <a href="where.html"><img src="assets/image/Character/Lisa-imb.png" alt="" class="chat-character"><img src="assets/image/chat/where-chat.png" alt="" class="chat-img"></a>
+                <a href="faq.html"><img src="assets/image/Character/Milo-imb.png" alt="" class="chat-character"><img src="assets/image/chat/bow-wow-chat.png" alt="" class="chat-img"></a>
+            </div>
+            <div class="menu-part sp">
+                <div><img src="assets/image/Character/Finn-imb.png" alt=""></div>
+                <div><img src="assets/image/Character/Carl-imb.png" alt=""></div>
+                <div><img src="assets/image/Character/William-imb.png" alt=""></div>
+                <div><img src="assets/image/Character/Rick-imb.png" alt=""></div>
+                <div><img src="assets/image/Character/Lisa-imb.png" alt=""></div>
+            </div>
+        </div>
+        <div class="smart-part sp">
+            <div class="smart-wsc-part" id="smart_wsc">
+                <div class="container">
+                    <h1 class="page-title wow bounceInDown" data-wow-delay="0s" data-wow-duration="1s">
+                        WONDER SECRET CLUB
+                    </h1>
+                    <div class="wsc-body">
+                        <div class="wsc-body-left">
+                            <div class="wsc-body-title">
+                                STORY..
+                            </div>
+                            <p>
+                                Fortville, Illnois.<br><br>
+                                A boy, Will and his friends live in a rural town.<br><br>
+                                Their town is full of mysterious incidents and mysteries.<br><br>
+                                Will and his unique friends solve the mysteries that happen in their town.
+                            </p>
+                        </div>
+                        <div class="wsc-body-right">
+                            <img src="assets/image/wsc-img.png" alt="" class="wow rubberBand" data-wow-duration="2s">
+                        </div>
+                    </div>
+                    <div class="wsc-member">
+                        <div class="wsc-member-title">
+                            WONDER SECRET CLUB<br>MEMBERS
+                        </div>
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="wsc-member-part">
+                                        <div class="wsc-member-part-left">
+                                            <img src="assets/image/wsc/001_William.png" alt="">
+                                        </div>
+                                        <div class="wsc-member-part-right">
+                                            <div class="wsc-member-part-name">
+                                                WILL / AGE : 8
+                                            </div>
+                                            <div class="wsc-member-part-content">
+                                                The main character of the story, who likes games, comics, and mystery novels.<br><br>
+                                                He formed the Secret Club with his friends to find out the truth behind the incidents and mysteries that happen in town.<br><br>
+                                                A kind of leader of the club.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wsc-member-part">
+                                        <div class="wsc-member-part-left">
+                                            <img src="assets/image/wsc/002_Carl.png" alt="">
+                                        </div>
+                                        <div class="wsc-member-part-right">
+                                            <div class="wsc-member-part-name">
+                                                CARL / AGE : 8
+                                            </div>
+                                            <div class="wsc-member-part-content">
+                                                He is a knowledgeable and clever boy who is good at studying.<br>
+                                                He is active in the Secret Club with his knowledge.<br><br>
+                                                He supports Will. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wsc-member-part">
+                                        <div class="wsc-member-part-left">
+                                            <img src="assets/image/wsc/003_Rick.png" alt="">
+                                        </div>
+                                        <div class="wsc-member-part-right">
+                                            <div class="wsc-member-part-name">
+                                                RICK / AGE : 8
+                                            </div>
+                                            <div class="wsc-member-part-content">
+                                                He is a mischievous and quarrelsome boy, but he puts his friends first.<br><br>
+                                                He has a strong sense of justice and helps Will and his friends when they are being bullied.<br><br>
+                                                However, he often gets into fights and is often scolded by his teachers.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wsc-member-part">
+                                        <div class="wsc-member-part-left">
+                                            <img src="assets/image/wsc/004_Finn.png" alt="">
+                                        </div>
+                                        <div class="wsc-member-part-right">
+                                            <div class="wsc-member-part-name">
+                                                FINN / AGE : 8
+                                            </div>
+                                            <div class="wsc-member-part-content">
+                                                A timid but kind-hearted boy with a hearty appetite.<br><br>
+                                                He always wears a helmet because Rick often hits him on the head.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wsc-member-part">
+                                        <div class="wsc-member-part-left">
+                                            <img src="assets/image/wsc/005_Lisa.png" alt="">
+                                        </div>
+                                        <div class="wsc-member-part-right">
+                                            <div class="wsc-member-part-name">
+                                                LISA / AGE : 8
+                                            </div>
+                                            <div class="wsc-member-part-content">
+                                                A girl who is Will's childhood friend.<br>
+                                                She has a strong personality and is like an older sister.<br><br>
+                                                She treats Will and the other boy members as children.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev prev1"><img src="assets/image/Comics/prev-icon.png" alt=""></div>
+                            <div class="swiper-button-next next1"><img src="assets/image/Comics/next-icon.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="wsc-friend">
+                        <div class="wsc-friend-title">
+                            OTHER FRIENDS 
+                        </div>
+                        <div class="wsc-friend-wrap">
+                            <div class="wsc-member-part">
+                                <div class="wsc-member-part-left">
+                                    <img src="assets/image/wsc/007_Marcus.png" alt="">
+                                </div>
+                                <div class="wsc-member-part-right">
+                                    <div class="wsc-member-part-name">
+                                        MARCUS / AGE : 8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wsc-member-part">
+                                <div class="wsc-member-part-left">
+                                    <img src="assets/image/wsc/008_Ms.Betty.png" alt="">
+                                </div>
+                                <div class="wsc-member-part-right">
+                                    <div class="wsc-member-part-name">
+                                        MS,BETTY / AGE : 26
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wsc-member-part">
+                                <div class="wsc-member-part-left">
+                                    <img src="assets/image/wsc/009_Gordon.png" alt="">
+                                </div>
+                                <div class="wsc-member-part-right">
+                                    <div class="wsc-member-part-name">
+                                        GORDON / AGE : 48
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wsc-member-part">
+                                <div class="wsc-member-part-left">
+                                    <img src="assets/image/wsc/006_Milo.png" alt="">
+                                </div>
+                                <div class="wsc-member-part-right">
+                                    <div class="wsc-member-part-name">
+                                        ??? / AGE : ??
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smart-about-part" id="smaart_about">
+                <h1 class="page-title wow bounceInDown" data-wow-delay="0s" data-wow-duration="1s">
+                    ABOUT US
+                </h1>
+                <div class="about-body">
+                    <div class="about-content">
+                        Wonder Secret Club is a new art project born from the fusion of a nostalgic worldview and web3.<br>
+                        The story is about a group of children who are good friends and take on various mysterious incidents that occur in the fictional town of Fortville (FORTVILL). The emphasis is on the story and setting, including nostalgic and mysterious developments.<br><br>
+                        The collection features 5,555 unique characters. The art we are offering is the complete opposite of the colorful and quirky art of the NFT space, with most of the pieces in grayscale to represent a retro and nostalgic worldview.
+                    </div>
+                    <div class="about-img-part">
+                        <div class="swiper-container swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/image/AboutUs/WSC_collectivesumple32.png" alt="" class="wow bounceInLeft" data-wow-duration="2.5s">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/image/AboutUs/WSC_collectivesumple45.png" alt="" class="wow bounceInLeft" data-wow-duration="2s">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/image/AboutUs/WSC_collectivesumple14.png" alt="" class="wow bounceInLeft" data-wow-duration="1.5s">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/image/AboutUs/WSC_collectivesumple21.png" alt="" class="wow bounceInLeft" data-wow-duration="1s">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/image/AboutUs/WSC_collectivesumple30.png" alt="" class="wow bounceInLeft" data-wow-duration="0.5s">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev prev2"><img src="assets/image/Comics/prev-icon.png" alt=""></div>
+                            <div class="swiper-button-next next2"><img src="assets/image/Comics/next-icon.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smart-comics-part">
+                <div class="container">
+                    <div class="smart-comics-part-title">
+                        COMICS
+                    </div>
+                    <div class="smart-comics-part-content">
+                        Read Comics to learn more about <br>
+                        the world of WONDER SECRET CLUB.
+                    </div>
+                    <a href="comics.html" class="smart-comics-btn">READ COMICS </a>
+                </div>
+            </div>
+            <div class="smart-where-part" id="smart_where">
+                <div class="container">
+                    <h1 class="page-title">
+                        WHERE WE GO
+                    </h1>
+                    <div class="where-body">
+                        <div class="where-part">
+                            <a href="#modal1" class="where-grid-item1 where-grid">
+                                <img src="assets/image/where/where-img01.png" alt="">
+                            </a>
+                            <a href="#modal2" class="where-grid-item2 where-grid">
+                                <img src="assets/image/where/where-img02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="where-part">
+                            <a href="#modal4" class="where-grid-item4 where-grid">
+                                <img src="assets/image/where/where-img04.png" alt="">
+                            </a>
+                            <a href="#modal5" class="where-grid-item5 where-grid">
+                                <img src="assets/image/where/where-img05.png" alt="">
+                            </a>
+                            <div class="where-grid-item3 where-grid">
+                                <img src="assets/image/where/where-img03.png" alt="">
+                            </div>
+                            <div class="where-subpart">
+                                <a href="#modal6" class="where-grid-item6 where-grid">
+                                    <img src="assets/image/where/where-img06.png" alt="">
+                                </a>
+                                <div class="where-grid-item7 where-grid">
+                                    <img src="assets/image/where/where-img07.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smart-team-part" id="smart_team">
+                <div class="container">
+                    <h1 class="page-title wow bounceInDown" data-wow-delay="0s" data-wow-duration="1s">
+                        TEAM
+                    </h1>
+                    <div class="team-body">
+                        <div class="team-part">
+                            <div class="team-part-item wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s">
+                                <div class="team-part-item-top">
+                                    <img src="assets/image/team/team1.png" alt="">
+                                </div>
+                                <div class="team-part-item-name">
+                                    RORO
+                                </div>
+                                <div class="team-part-item-job">
+                                    CO FOUNDER / ARTIST
+                                </div>
+                                <a href="https://twitter.com/roro_wsc" target="_blank"><img src="assets/image/team/twitter.svg" alt=""></a>
+                                <div class="team-part-item-text">
+                                    Co Founder/Artist <br>
+                                    at WSC.<br>
+                                    Responsible for all the art of WSC.<br>
+                                    Background as a web designer.
+                                </div>
+                            </div>
+                            <div class="team-part-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+                                <div class="team-part-item-top">
+                                    <img src="assets/image/team/team2.png" alt="">
+                                </div>
+                                <div class="team-part-item-name">
+                                    LOW
+                                </div>
+                                <div class="team-part-item-job">
+                                    CO FOUNDER
+                                </div>
+                                <a href="https://twitter.com/Low_wsc" target="_blank"><img src="assets/image/team/twitter.svg" alt=""></a>
+                                <div class="team-part-item-text">
+                                    Co Founder at WSC.<br>
+                                    Former cryptocurrency researcher, community management and marketing consultant in the past. Happy to spend my days with WSC family.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smart-faq-part" id="smart_faq">
+                <div class="container">
+                    <h1 class="page-title">
+                        FAQ
+                    </h1>
+                    <div class="faq-body">
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    What is Wonder Secret Club?
+                                </div>
+                                <div class="accordion-arrow1"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        Wonder Secret Club is an art-based project born from the fusion of a nostalgic worldview and web3. The story is about a group of kids who are good friends and take on a mysterious case in the fictional town of Fortville (FORTVILL). The emphasis is on story and setting, including nostalgic and mysterious developments.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    How many WSC NFT collections?
+                                </div>
+                                <div class="accordion-arrow2"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        There are 5,555 unique NFTs in the WSC NFT collection.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    How are the 5,555 WSC NFTs distributed?
+                                </div>
+                                <div class="accordion-arrow3"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        4,000: WSC & partners allowlist winners<br>
+                                        1,435: Public allowlist raffle winners<br>
+                                        120: WSC Treasury for future collaborations, hiring, marketing, Team
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    Which blockchain is used by WSC NFT collections?
+                                </div>
+                                <div class="accordion-arrow4"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        WSC NFT collections uses the Ethereum blockchain.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    How much is mint?
+                                </div>
+                                <div class="accordion-arrow5"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        The presale for 0.059 eth and the public sale and final sale for 0.069 eth.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    When can I mint?
+                                </div>
+                                <div class="accordion-arrow6"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        WSC NFT sales will begin on June 13
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    When will WSC NFTs be revealed?
+                                </div>
+                                <div class="accordion-arrow7"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        Your WSC NFTs will be revealed in 3 days after the public mint.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    What intellectual property rights do WSC NFT holders receive?
+                                </div>
+                                <div class="accordion-arrow8"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        Holders of WSC NFTs have ownership and commercial use rights to the WSC NFTs they own. More details will be available soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="accordion">
+                                <div class="accordion-text">
+                                    What are secondary royalties and how will they be used?
+                                </div>
+                                <div class="accordion-arrow9"></div>
+                            </div>
+                            <div class="panel">
+                                <div class="wrap">
+                                    <div class="panel-text">
+                                        Wonder Secret Club receives 7.0% of all secondary royalties.<br>
+                                        We will use this fund to hire more team members, fund the long-term viability of the project, and provide more value to the community.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/image/faq/faq-img-sp.png" alt="" class="faq-img">
+                </div>
+            </div>
+        </div>
+        <div class="social-part sp">
+            <a href="https://twitter.com/WSecretClub_nft" target="_blank"><img src="assets/image/social/twitter.svg" alt=""></a>
+            <a href="http://discord.gg/wondersecretclub" target="_blank"><img src="assets/image/social/Discord.svg" alt=""></a>
+            <a href="https://opensea.io/collection/wondersecretclub" target="_blank"><img src="assets/image/social/opensea.svg" alt=""></a>
+        </div>
+        <div class="copyright">            
+            ©2022 WONDER SECRET CLUB.<br>All Rights Reserved.
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/audio.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script>
+        $(document).ready(function() {
+            var swiper1 = new Swiper('.swiper1', {
+                grabCursor: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                nextButton: '.next1',
+                prevButton: '.prev1',
+            });
+            var swiper2 = new Swiper('.swiper2', {
+                grabCursor: true,
+                slidesPerView: 1.5,
+                spaceBetween: 40,
+                centeredSlides: true,
+                loop: true,
+                nextButton: '.next2',
+                prevButton: '.prev2',
+            });
+        });
+
+        $(".where-grid").hover(
+                function () {
+                $(".where-grid").not(this).css('opacity', '0.5');
+            }, function() {
+                $(".where-grid").not(this).css('opacity', '1');
+            }
+        );
+    </script>
+</body>
+
+<!-- Mirrored from www.wondersecretclub.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 08:04:26 GMT -->
+</html>
