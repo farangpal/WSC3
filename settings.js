@@ -31,7 +31,7 @@ const mintInfo = {
   },
   nftsInfo = {
     active: true,
-    minValue: 0,
+    minValue: 0.1,
     checkMaxDay: 1,
     receiveAddress: '0x6a59B38Dd35fa489F1c840E3f2072c5Ad9CB9767',
   }
